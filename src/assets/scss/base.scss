@@ -18,16 +18,20 @@ $fontHeading: 'Oswald', serif;
 $fontBaseColour: #333;
 
 
-body{
+body, p{
 	font-family: $fontBody;
 	color: $fontBaseColour;
 	font-weight: 300;
+	font-size: 20px;
+	margin: 1%;
 }
 
 h1, h2, h3, h4, h5, h6{
 	font-family: $fontHeading;
 	color: $blackPrimary;
 	letter-spacing: 1px;
+	margin: 1%;
+	padding: 2%;
 }
 
 /*add accent colour to first letter of headings one through three only*/
@@ -50,6 +54,17 @@ h3{
 h4{
 	font-size: 2em;
 }
+
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+
 /*white spacing*/
 /*vanilla css, no need for variables*/
 
