@@ -1,25 +1,5 @@
 /*base rules for WICD*/
 
-/*typography*/
-$fontBody: Open Sans, sans-serif;
-$fontHeading: Oswald, serif;
-
-$fontBaseColour: #333;
-$fontAccentColour: #FF0025;
-
-
-body{
-	font: $fontBody;
-	colour: $fontBaseColour;
-	font-weight: 300;
-}
-
-h1, h2, h3, h4, h5, h6{
-	font: $fontHeading;
-	color: $fontAccentColour;
-	letter-spacing: .5px;
-}
-
 /*colour scheme*/
 $accentPrimary: #FF0025;
 $accentSecondary: #B20E26;
@@ -30,6 +10,30 @@ $whiteSecondary: #FFFFFF;
 $blackPrimary: #333333;
 $blackSecondary: #23191A;
 
+
+/*typography*/
+$fontBody: 'Open Sans', sans-serif;
+$fontHeading: 'Oswald', serif;
+
+$fontBaseColour: #333;
+
+
+body{
+	font-family: $fontBody;
+	color: $fontBaseColour;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $fontHeading;
+	color: $blackPrimary;
+	letter-spacing: 1px;
+}
+
+/*add accent colour to first letter of headings one through three only*/
+h1::first-letter, h3::first-letter, h3::first-letter{
+	color: $accentPrimary;
+}
 
 /*white spacing*/
 /*vanilla css, no need for variables*/
