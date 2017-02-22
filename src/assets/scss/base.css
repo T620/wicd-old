@@ -1,0 +1,16 @@
+/*base rules for WICD*/
+/*typography*/
+body {
+  font: Open Sans, sans-serif;
+  colour: #333;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  font: Oswald, serif;
+  color: #FF0025;
+  letter-spacing: .5px; }
+
+/*colour scheme*/
+/*white spacing*/
+
+/*# sourceMappingURL=base.css.map */

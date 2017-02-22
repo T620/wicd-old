@@ -1,0 +1,26 @@
+/*base rules for WICD*/
+
+/*typography*/
+$fontBody: Open Sans, sans-serif;
+$fontHeading: Oswald, serif;
+
+$fontBaseColour: #333;
+$fontAccentColour: #FF0025;
+
+
+body{
+	font: $fontBody;
+	colour: $fontBaseColour;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font: $fontHeading;
+	color: $fontAccentColour;
+	letter-spacing: .5px;
+}
+
+/*colour scheme*/
+
+/*white spacing*/
+
