@@ -83,6 +83,11 @@ h4{
 	margin-bottom: 5%;
 }
 
+.no-m-t{
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
 
 /*padding*/
 .p-a-1{
@@ -91,3 +96,25 @@ h4{
 .p-a-2{
 	padding: 5%;
 }
+
+#intro{
+	margin-top: 15% !important;
+}
+
+section{
+	min-height: 100%;
+	margin: 2% 0 2% 0;
+}
+
+.light-bg{
+	background: $whitePrimary;
+}
+.dark-bg{
+	background: $whiteSecondary;
+}
+
+/*transitions*/
+$standardTransition: all 300ms ease-in-out;
+
+/*shadows*/
+$blackTextShadow: 0px 0px 3px $blackSecondary; 

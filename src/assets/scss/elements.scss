@@ -1,13 +1,28 @@
 /*rules for elements used in WICD */
-
 /*spotlight portfolio divs */
-.spotlight-div{
-	margin: 3% 0;
+@import 'base';
+	
+.spotlight-div {
 	border: 1px solid #ccc;
-	padding: 2.5% 5%;
+	padding: 7% 5% !important; 
+	background: $blackSecondary;
+	color: $whitePrimary;
+	transition: $standardTransition;
 }
 
-.spotlight-div:nth-of-type(2){
-	border-left: 0.5px;
-	border-right: 0.5px;
+.spotlight-div:hover{
+	background: $accentPrimary;
+	color: $blackPrimary;
+	transition: $standardTransition;
+	cursor: pointer;
 }
+
+.spotlight-div:nth-of-type(2) {
+  	border-left: 0.5px;
+  	border-right: 0.5px; 
+}
+
+.spotlight-cat{
+	font-size: .8em; 
+}
+
