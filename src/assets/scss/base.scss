@@ -17,12 +17,11 @@ $fontHeading: 'Oswald', serif;
 
 $fontBaseColour: #333;
 
-
 body, p{
 	font-family: $fontBody;
 	color: $fontBaseColour;
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 17px !important;
 	margin: 1%;
 }
 
