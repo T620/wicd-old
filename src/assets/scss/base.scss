@@ -34,11 +34,6 @@ h1, h2, h3, h4, h5, h6{
 	padding: 2%;
 }
 
-/*add accent colour to first letter of headings one through three only*/
-h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter{
-	color: $accentPrimary;
-}
-
 h1{
 	font-size: 3em;
 }
