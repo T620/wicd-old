@@ -1,3 +1,4 @@
+/*rules for navbar */
 /*base rules for WICD*/
 /*colour scheme*/
 /*typography*/
@@ -5,7 +6,7 @@ body, p {
   font-family: "Open Sans", sans-serif;
   color: #333;
   font-weight: 300;
-  font-size: 17px !important;
+  font-size: 20px;
   margin: 1%; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -14,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   margin: 1%;
   padding: 2%; }
+
+/*add accent colour to first letter of headings one through three only*/
+h1::first-letter, h2::first-letter, h3::first-letter, h4::first-letter {
+  color: #FF0025; }
 
 h1 {
   font-size: 3em; }
@@ -36,9 +41,6 @@ h4 {
 .text-right {
   text-align: right; }
 
-.small-text {
-  font-size: .8em; }
-
 /*white spacing*/
 /*vanilla css, no need for variables*/
 /*margins*/
@@ -54,10 +56,6 @@ h4 {
 .m-b-2 {
   margin-bottom: 5%; }
 
-.no-m-t {
-  margin-top: 0 !important;
-  padding-top: 0 !important; }
-
 /*padding*/
 .p-a-1 {
   padding: 2.5%; }
@@ -65,19 +63,11 @@ h4 {
 .p-a-2 {
   padding: 5%; }
 
-#intro {
-  margin-top: 5% !important; }
+#navbar {
+  padding: .5%;
+  margin-bottom: 2%; }
 
-section {
-  min-height: 100%; }
+.ui .inverted {
+  background: #23191A; }
 
-.light-bg {
-  background: #FFF9FA; }
-
-.dark-bg {
-  background: #FFFFFF; }
-
-/*transitions*/
-/*shadows*/
-
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=nav.css.map */

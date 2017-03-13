@@ -8,7 +8,7 @@ $whitePrimary: #FFF9FA;
 $whiteSecondary: #FFFFFF;
 
 $blackPrimary: #333333;
-$blackSecondary: #23191A;
+$blackSecondary: #2d2728;
 
 
 /*typography*/
@@ -16,6 +16,13 @@ $fontBody: 'Open Sans', sans-serif;
 $fontHeading: 'Oswald', serif;
 
 $fontBaseColour: #333;
+
+
+/*transitions*/
+$standardTransition: all 300ms ease-in-out;
+
+/*shadows*/
+$blackTextShadow: 0px 0px 3px $blackSecondary;
 
 body, p{
 	font-family: $fontBody;
@@ -47,6 +54,22 @@ h3{
 
 h4{
 	font-size: 2em;
+}
+
+a{
+	transition: $standardTransition;
+	color: $accentPrimary;
+	font-weight: 600;
+}
+a:hover{
+	transition: $standardTransition;
+	color: $blackPrimary;
+}
+
+.align-center{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .text-left{
@@ -96,12 +119,11 @@ h4{
 }
 
 #intro{
-	margin-top: 15% !important;
+	margin-top: 5% !important;
 }
 
 section{
 	min-height: 100%;
-	margin: 2% 0 2% 0;
 }
 
 .light-bg{
@@ -110,9 +132,3 @@ section{
 .dark-bg{
 	background: $whiteSecondary;
 }
-
-/*transitions*/
-$standardTransition: all 300ms ease-in-out;
-
-/*shadows*/
-$blackTextShadow: 0px 0px 3px $blackSecondary; 
