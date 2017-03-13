@@ -38,6 +38,15 @@
 	padding: 1% 35%;
 }
 
+.form-input{
+	transition: $standardTransition !important;
+	margin: 3% !important;
+}
+.form-input:focus{
+	border-color: $accentPrimary !important;
+	transition: $standardTransition;
+}
+
 .bottom-brand{
 	padding-top: 5%;
 	display: block;
