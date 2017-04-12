@@ -1,114 +1,187 @@
 /*rules for elements used in WICD */
 /*spotlight portfolio divs */
-@import 'base';
+/*base rules for WICD*/
+/*colour scheme*/
+/*typography*/
+/*transitions*/
+/*shadows*/
+body, p {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-weight: 300;
+  font-size: 17px !important;
+  margin: 1%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", serif;
+  color: #333333;
+  letter-spacing: 1px;
+  margin: 1%;
+  padding: 2%; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.7em; }
+
+h3 {
+  font-size: 2.5em; }
+
+h4 {
+  font-size: 2em; }
+
+a {
+  transition: all 300ms ease-in-out;
+  color: #FF0025;
+  font-weight: 600; }
+
+a:hover {
+  transition: all 300ms ease-in-out;
+  color: #333333; }
+
+.align-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.small-text {
+  font-size: .8em; }
+
+/*white spacing*/
+/*vanilla css, no need for variables*/
+/*margins*/
+.m-t-1 {
+  margin-top: 2.5%; }
+
+.m-t-2 {
+  margin-top: 5%; }
+
+.m-b-1 {
+  margin-bottom: 2.5%; }
+
+.m-b-2 {
+  margin-bottom: 5%; }
+
+.no-m-t {
+  margin-top: 0 !important;
+  padding-top: 0 !important; }
+
+/*padding*/
+.p-a-1 {
+  padding: 2.5%; }
+
+.p-a-2 {
+  padding: 5%; }
+
+.first-section {
+  margin-top: 5% !important; }
+
+section {
+  min-height: 100%; }
+
+.light-bg {
+  background: #FFF9FA; }
+
+.dark-bg {
+  background: #FFFFFF; }
 
 .spotlight-div {
-	border: 1px solid #ccc;
-	padding: 7% 5% !important;
-	background: $blackSecondary;
-	color: $whitePrimary;
-	transition: $standardTransition;
-}
+  border: 1px solid #ccc;
+  padding: 7% 5% !important;
+  background: #2d2728;
+  color: #FFF9FA;
+  transition: all 300ms ease-in-out; }
 
-.spotlight-div:hover{
-	background: $accentPrimary;
-	color: $blackPrimary;
-	transition: $standardTransition;
-	cursor: pointer;
-}
+.spotlight-div:hover {
+  background: #FF0025;
+  color: #333333;
+  transition: all 300ms ease-in-out;
+  cursor: pointer; }
 
 .spotlight-div:nth-of-type(2) {
-  	border-left: 0.5px;
-  	border-right: 0.5px;
-}
+  border-left: 0.5px;
+  border-right: 0.5px; }
 
-.spotlight-cat{
-	font-size: .8em;
-}
+.spotlight-cat {
+  font-size: .8em; }
 
+.segments {
+  margin: 1% 5% !important; }
 
-.segments{
-	margin: 1% 5% !important;
-}
-.segment p{
-	font-size: 17px;
-}
+.segment p {
+  font-size: 17px; }
 
-.form{
-	padding: 1% 35%;
-}
+.form {
+  padding: 1% 35%; }
 
-.form-input{
-	transition: $standardTransition !important;
-	margin: 3% !important;
-}
-.form-input:focus{
-	border-color: $accentPrimary !important;
-	transition: $standardTransition;
-}
+.form-input {
+  transition: all 300ms ease-in-out !important;
+  margin: 3% !important; }
 
-.bottom-brand{
-	padding-top: 5%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
+.form-input:focus {
+  border-color: #FF0025 !important;
+  transition: all 300ms ease-in-out; }
 
+.bottom-brand {
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
-//target both the form button and the class
-button, .button{
-	transition: $standardTransition;
-	padding: 3% 4%;
-	color: $whitePrimary;
-	background: $blackPrimary;
-	//reset the border
-	border: 0;
-	border-bottom: 4px solid $accentSecondary;
-	border-radius: 5px;
-	//font
-	font-size: 1.4em;
-	//center
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: auto;
-	max-width: 10%;
-}
+button, .button {
+  transition: all 300ms ease-in-out;
+  padding: 3% 4%;
+  color: #FFF9FA;
+  background: #333333;
+  border: 0;
+  border-bottom: 4px solid #B20E26;
+  border-radius: 5px;
+  font-size: 1.4em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
-button:hover, .button:hover{
-	color: $whitePrimary;
-	transition: $standardTransition;
-	border-bottom-color: $accentPrimary;
-	box-shadow: $blackTextShadow;
-	background: $blackSecondary;
-}
+button:hover, .button:hover {
+  color: #FFF9FA;
+  transition: all 300ms ease-in-out;
+  border-bottom-color: #FF0025;
+  box-shadow: 0px 0px 3px #2d2728;
+  background: #2d2728; }
 
+.social-href {
+  display: block;
+  margin: 5%; }
 
-.social-href{
-	display: block;
-	margin: 5%;
-}
+.qoute {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 2.5em; }
 
-.qoute{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	font-size: 2.5em;
-}
-.sixty-six, .ninety-nine{
-	font-family: $fontHeading;
-}
-.qoute-sub{
-	margin: 3% 0;
-	display: block;
-	font-size: .4em !important;
-}
+.sixty-six, .ninety-nine {
+  font-family: "Oswald", serif; }
 
-.footer{
-	margin: 5% 0;
-	padding: 6%;
-	background: $blackPrimary;
-	color: $whiteSecondary;
-	border-top: 5px solid $accentPrimary;
-}
+.qoute-sub {
+  margin: 3% 0;
+  display: block;
+  font-size: .4em !important; }
+
+.footer {
+  margin: 5% 0;
+  padding: 1% !important; 
+  background: #333333;
+  color: #FFFFFF;
+  border-top: 5px solid #FF0025; }
+
+/*# sourceMappingURL=elements.scss.map */
