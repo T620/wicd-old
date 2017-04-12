@@ -11,7 +11,7 @@
         "Say hello",
         "Let's do this",
         "Give me a shot",
-        "Lets get coffee",
+        "Let's get coffee",
         "Pay me to stare at a screen"
     ];
     var randomPhrase = Math.floor((Math.random() * 12));
