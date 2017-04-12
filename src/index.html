@@ -13,11 +13,22 @@
 
     <!--css-->
     <link rel="stylesheet" type="text/css" href="assets/semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/scss/base.css?v=1.1">
-    <link rel="stylesheet" type="text/css" href="assets/scss/nav.css">
-	<link rel="stylesheet" type="text/css" href="assets/scss/elements.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/elements.css">
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald" rel="stylesheet">
+
+    <!--jquery resources -->
+     <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+
+    <!--jquery effects -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
   </head>
 
  <body>
@@ -26,10 +37,9 @@
 	    		<img src="assets/img/brand/brand.svg">
 	    	</a>
   		<div class="right menu">
-		    	<a class="item">About Me</a>
-    			<a class="item">Services</a>
-		    	<a class="item">Portfolio</a>
-  			<a class="item">Say Hello</a>
+		    <a class="item page-scroll" href="#about">About Me</a>
+		    <a class="item page-scroll" href="#spotlight">My Portfolio</a>
+  			<a class="item page-scroll" href="#contact">Say Hello</a>
 	    </div>
     </div> <!--/navbar-->
 <section id="landing" class="light-bg first-section">
@@ -216,14 +226,6 @@
     </div>
 </div>
 
-<!--jquery resources -->
- <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <!--jquery effects -->
-  <script src="assets/js/jquery.easing.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
   <!-- dynamic header for form -->
   <script src="assets/js/form-cta-changer.js"></script>
   <!--semantic loveliness-->
