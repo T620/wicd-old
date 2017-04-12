@@ -1,100 +1,5 @@
 /*rules for elements used in WICD */
-/*spotlight portfolio divs */
-/*base rules for WICD*/
-/*colour scheme*/
-/*typography*/
-/*transitions*/
-/*shadows*/
-body, p {
-  font-family: "Open Sans", sans-serif;
-  color: #333;
-  font-weight: 300;
-  font-size: 17px !important;
-  margin: 1%; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", serif;
-  color: #333333;
-  letter-spacing: 1px;
-  margin: 1%;
-  padding: 2%; }
-
-h1 {
-  font-size: 3em; }
-
-h2 {
-  font-size: 2.7em; }
-
-h3 {
-  font-size: 2.5em; }
-
-h4 {
-  font-size: 2em; }
-
-a {
-  transition: all 300ms ease-in-out;
-  color: #FF0025;
-  font-weight: 600; }
-
-a:hover {
-  transition: all 300ms ease-in-out;
-  color: #333333; }
-
-.align-center {
-  display: block;
-  margin-right: auto;
-  margin-left: auto; }
-
-.text-left {
-  text-align: left; }
-
-.text-center {
-  text-align: center; }
-
-.text-right {
-  text-align: right; }
-
-.small-text {
-  font-size: .8em; }
-
-/*white spacing*/
-/*vanilla css, no need for variables*/
-/*margins*/
-.m-t-1 {
-  margin-top: 2.5%; }
-
-.m-t-2 {
-  margin-top: 5%; }
-
-.m-b-1 {
-  margin-bottom: 2.5%; }
-
-.m-b-2 {
-  margin-bottom: 5%; }
-
-.no-m-t {
-  margin-top: 0 !important;
-  padding-top: 0 !important; }
-
-/*padding*/
-.p-a-1 {
-  padding: 2.5%; }
-
-.p-a-2 {
-  padding: 5%; }
-
-.first-section {
-  margin-top: 5% !important; }
-
-section {
-  min-height: 100%; }
-
-.light-bg {
-  background: #FFF9FA; }
-
-.dark-bg {
-  background: #FFFFFF; }
-
+/*spotlight portfolio div*/
 .spotlight-div {
   border: 1px solid #ccc;
   padding: 7% 5% !important;
@@ -179,7 +84,7 @@ button:hover, .button:hover {
 
 .footer {
   margin: 5% 0;
-  padding: 1% !important; 
+  padding: 1% !important;
   background: #333333;
   color: #FFFFFF;
   border-top: 5px solid #FF0025; }
