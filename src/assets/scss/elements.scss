@@ -140,4 +140,22 @@ button:hover, .button:hover {
 .right{
     float: right;
 }
+
+.expand{
+    position: absolute;;
+    top: 5px;
+    right: 5px;
+    margin: 3%;
+    display: none;
+    transition: $standardTransition;
+    color: $whiteSecondary !important;
+}
+
+.spotlight-div:hover{
+    .expand{
+        transition: $standardTransition;
+        display: block;
+        color: $whiteSecondary !important;
+    }
+}
 /*# sourceMappingURL=elements.scss.map */
