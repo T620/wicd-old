@@ -1,6 +1,6 @@
 /*rules for elements used in WICD */
 /*spotlight portfolio div*/
-import base
+@import 'base';
 
 .spotlight-div {
   border: 1px solid #ccc;
@@ -10,9 +10,9 @@ import base
   transition: all 300ms ease-in-out; }
 
 .spotlight-div:hover {
-  background: #FF0025;
-  color: #333333;
-  transition: all 300ms ease-in-out;
+  background: $accentPrimary;
+  color: $blackPrimary;
+  transition: $standardTransition;
   cursor: pointer; }
 
 .spotlight-div:nth-of-type(2) {
@@ -32,12 +32,12 @@ import base
   padding: 1% 35%; }
 
 .form-input {
-  transition: all 300ms ease-in-out !important;
+  transition: $standardTransition;
   margin: 3% !important; }
 
 .form-input:focus {
-  border-color: #FF0025 !important;
-  transition: all 300ms ease-in-out; }
+  border-color: $accentPrimary !important;
+  transition: $standardTransition;; }
 
 .bottom-brand {
   padding-top: 5%;
@@ -46,12 +46,12 @@ import base
   margin-right: auto; }
 
 button, .button {
-  transition: all 300ms ease-in-out;
+  transition: $standardTransition;
   padding: 3% 4%;
-  color: #FFF9FA;
-  background: #333333;
+  color: $whitePrimary;
+  background: $blackPrimary;
   border: 0;
-  border-bottom: 4px solid #B20E26;
+  border-bottom: 4px solid $accentSecondary;
   border-radius: 5px;
   font-size: 1.4em;
   display: block;
@@ -59,10 +59,10 @@ button, .button {
   margin-right: auto; }
 
 button:hover, .button:hover {
-  color: #FFF9FA;
-  transition: all 300ms ease-in-out;
-  border-bottom-color: #FF0025;
-  background: #2d2728; }
+  color: $whitePrimary;
+  transition: $standardTransition;
+  border-bottom-color: $accentPrimary;
+  background: $blackSecondary; }
 
 .social-href {
   display: block;
@@ -76,7 +76,8 @@ button:hover, .button:hover {
   font-size: 2.5em; }
 
 .sixty-six, .ninety-nine {
-  font-family: "Oswald", serif; }
+  font-family: "Oswald", serif;
+}
 
 .qoute-sub {
   margin: 3% 0;
@@ -86,9 +87,9 @@ button:hover, .button:hover {
 .footer {
   margin: 5% 0;
   padding: 1% !important;
-  background: #333333;
-  color: #FFFFFF;
-  border-top: 5px solid #FF0025; }
+  background: $blackPrimary;
+  color: $whiteSecondary;
+  border-top: 5px solid $accentPrimary; }
 
 #reviews{
 	padding-left: 0;
@@ -100,40 +101,37 @@ button:hover, .button:hover {
 .tile-sequence{
     //need to change height to responsive unit
     height: 265px;
-    padding: 1px;
-    background: #333333;
+    padding: 0;
+    background: $blackPrimary;
 }
 
-.tile-sequence p{
-    color: #fff !important;
+.tile-sequence p, .tile-sequence i{
+    color: $whiteSecondary !important;
 }
 .tile{
     height: 65%;
 	width: 50%;
 	padding: 7%;
     background: inherit;
-    color: #fff !important;
 }
 .tile-accent-left{
-    background: #ff022f;
-    background: -moz-linear-gradient(-45deg, #ff022f 0%, #b5000e 100%);
-    background: -webkit-linear-gradient(-45deg, #ff022f 0%,#b5000e 100%);
-    background: linear-gradient(135deg, #ff022f 0%,#b5000e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff022f', endColorstr='#b5000e',GradientType=1 );
+    background: $accentPrimary;
+    background: -moz-linear-gradient(-45deg, $accentPrimary 0%, $accentSecondary 100%);
+    background: -webkit-linear-gradient(-45deg, $accentPrimary 0%, $accentSecondary 100%);
+    background: linear-gradient(135deg, $accentPrimary 0%, $accentSecondary 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0025', endColorstr='#B20E26',GradientType=1 );
 	text-align: center;
     padding: 10%;
-    color: #fff;
 }
 
 .tile-accent-right{
-    background: #b5000e;
-    background: -moz-linear-gradient(45deg, #b5000e 0%, #ff022f 100%);
-    background: -webkit-linear-gradient(45deg, #b5000e 0%,#ff022f 100%);
-    background: linear-gradient(45deg, #b5000e 0%,#ff022f 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5000e', endColorstr='#ff022f',GradientType=1 );
+    background: $accentSecondary;
+    background: -moz-linear-gradient(-45deg, $accentSecondary 0%, $accentPrimary 100%);
+    background: -webkit-linear-gradient(-45deg, $accentSecondary 0%, $accentPrimary 100%);
+    background: linear-gradient(135deg, $accentSecondary 0%, $accentPrimary 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B20E26', endColorstr='#FF0025',GradientType=1 );
 	text-align: center;
     padding: 10%;
-    color: #fff;
 }
 
 .left{
