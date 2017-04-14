@@ -1,5 +1,7 @@
 /*rules for elements used in WICD */
 /*spotlight portfolio div*/
+import base
+
 .spotlight-div {
   border: 1px solid #ccc;
   padding: 7% 5% !important;
@@ -89,4 +91,56 @@ button:hover, .button:hover {
   color: #FFFFFF;
   border-top: 5px solid #FF0025; }
 
+#reviews{
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.tile-sequence{
+    //need to change height to responsive unit
+    height: 265px;
+    padding: 1px;
+    background: #333333;
+}
+
+.tile-sequence p{
+    color: #fff !important;
+}
+.tile{
+    height: 65%;
+	width: 50%;
+	padding: 7%;
+    background: inherit;
+    color: #fff !important;
+}
+.tile-accent-left{
+    background: #ff022f;
+    background: -moz-linear-gradient(-45deg, #ff022f 0%, #b5000e 100%);
+    background: -webkit-linear-gradient(-45deg, #ff022f 0%,#b5000e 100%);
+    background: linear-gradient(135deg, #ff022f 0%,#b5000e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff022f', endColorstr='#b5000e',GradientType=1 );
+	text-align: center;
+    padding: 10%;
+    color: #fff;
+}
+
+.tile-accent-right{
+    background: #b5000e;
+    background: -moz-linear-gradient(45deg, #b5000e 0%, #ff022f 100%);
+    background: -webkit-linear-gradient(45deg, #b5000e 0%,#ff022f 100%);
+    background: linear-gradient(45deg, #b5000e 0%,#ff022f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5000e', endColorstr='#ff022f',GradientType=1 );
+	text-align: center;
+    padding: 10%;
+    color: #fff;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
 /*# sourceMappingURL=elements.scss.map */
