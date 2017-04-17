@@ -95,7 +95,9 @@ button:hover, .button:hover {
 
 .social-href {
   display: block;
-  margin: 5%; }
+  margin: 5% 5% 5% 39%;
+  width: 25%;
+ }
 
 .qoute {
   display: block;
@@ -118,8 +120,12 @@ button:hover, .button:hover {
   padding: 1% !important;
   background: $blackPrimary;
   color: $whiteSecondary;
-  border-top: 5px solid $accentPrimary; }
+  border-top: 5px solid $accentPrimary;
+}
 
+.footer a:hover{
+	color: $whitePrimary;
+}
 #reviews{
 	padding-left: 0;
 	padding-right: 0;
