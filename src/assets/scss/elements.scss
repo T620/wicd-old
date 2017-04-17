@@ -5,15 +5,26 @@
 .spotlight-div {
   border: 1px solid #ccc;
   padding: 7% 5% !important;
-  background: #2d2728;
+  background: -moz-linear-gradient(-45deg, $blackPrimary 0%, $blackSecondary 100%);
+  background: -webkit-linear-gradient(-45deg, $blackPrimary 0%, $blackSecondary 100%);
+  background: linear-gradient(135deg, $blackPrimary 0%, $blackSecondary 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0025', endColorstr='#B20E26',GradientType=1 );
   color: #FFF9FA;
-  transition: all 300ms ease-in-out; }
+  transition: $standardTransition;
+}
 
 .spotlight-div:hover {
   background: $accentPrimary;
+  background: -moz-linear-gradient(-45deg, $accentPrimary 0%, $accentSecondary 100%);
+  background: -webkit-linear-gradient(-45deg, $accentPrimary 0%, $accentSecondary 100%);
+  background: linear-gradient(135deg, $accentPrimary 0%, $accentSecondary 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0025', endColorstr='#B20E26',GradientType=1 );
+  text-align: center;
+
   color: $blackPrimary;
-  transition: $standardTransition;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 600ms ease-in-out linear;
+}
 
 .spotlight-div:nth-of-type(2) {
   border-left: 0.5px;
@@ -37,7 +48,7 @@
 
 .form-input:focus {
   border-color: $accentPrimary !important;
-  transition: $standardTransition;; }
+  transition: $standardTransition; }
 
 .bottom-brand {
   padding-top: 5%;
@@ -141,19 +152,23 @@ button:hover, .button:hover {
     float: right;
 }
 
+.spotlight-wrapper{
+    padding: 1%;
+}
+
 .expand{
     position: absolute;;
     top: 5px;
     right: 5px;
     margin: 3%;
     display: none;
-    transition: $standardTransition;
+    transition: all 300ms ease-in-out linear;
     color: $whiteSecondary !important;
 }
 
 .spotlight-div:hover{
     .expand{
-        transition: $standardTransition;
+        transition: all 300ms ease-in-out linear;
         display: block;
         color: $whiteSecondary !important;
     }
