@@ -60,13 +60,30 @@
 .form {
   padding: 1% 35%; }
 
+label{
+	color: $blackSecondary !important;
+}
+
+.text{
+	padding: 2% !important;
+}
 .form-input {
-  transition: $standardTransition;
-  margin: 3% !important; }
+	font-family: inherit !important;
+	transition: $standardTransition !important;
+ 	margin: 0% !important;
+	padding: 5% !important;
+	background: $whitePrimary !important;
+	border-radius: 0 !important;
+	//reset the border
+	border: 0 !important;
+	//set it again
+	border-bottom: 2px solid $blackPrimary !important;
+}
 
 .form-input:focus {
-  border-color: $accentPrimary !important;
-  transition: $standardTransition; }
+	transition: $standardTransition !important;
+ 	border-bottom-color: $accentPrimary !important;
+}
 
 .bottom-brand {
   padding-top: 5%;
